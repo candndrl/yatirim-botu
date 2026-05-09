@@ -153,7 +153,7 @@ En karlı görünen 1-2 varlığı kısaca özetle.
 ⚠️ Bu yatırım tavsiyesi değil, bilgilendirme amaçlıdır.
 """
     try:
-        response = model.generate_content(prompt)
+        response = model.generate_content(prompt, request_options={"timeout": 25})
         return response.text
     except Exception as e:
         return f"❌ Rapor oluşturulamadı: {str(e)}"
