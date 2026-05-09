@@ -1,0 +1,5 @@
+flask==3.0.0
+google-generativeai==0.8.0
+feedparser==6.0.11
+requests==2.31.0
+gunicorn==21.2.0
